@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pentris</string>
+    <string name="help_content">문의->holenet6147@naver.com</string>
+    <string name="submit_limit">같은 점수로 두 번 이상 제출할 수 없습니다</string>
+</resources>

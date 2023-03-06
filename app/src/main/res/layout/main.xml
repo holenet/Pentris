@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holenet.pentris.GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rLsurface">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4">
+
+                        <Button
+                            android:id="@+id/bTmenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_menu_black_24dp"
+                            android:drawableTint="#FFF"
+                            android:elevation="3dp"
+                            android:onClick="pad"
+                            android:text="MENU"/>
+
+                        <TextView
+                            android:text="Best"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tVbest"
+                            android:paddingRight="7dp"
+                            android:layout_gravity="right"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:text="Score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tVscore"
+                            android:paddingRight="7dp"
+                            android:layout_gravity="right"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"></LinearLayout>
+
+                        <TextView
+                            android:text="Next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/rLnext"
+                        android:layout_weight="3">
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/bTdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:onClick="pad"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:tint="#FFF"/>
+
+                    <ImageButton
+                        android:id="@+id/bTpull"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:elevation="3dp"
+                        android:onClick="pad"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_vertical_align_bottom_black_24dp"
+                        android:tint="#FFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/bTccw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:onClick="pad"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_rotate_left_black_24dp"
+                    android:tint="#FFF"/>
+
+                <ImageButton
+                    android:id="@+id/bTcw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:onClick="pad"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_rotate_right_black_24dp"
+                    android:tint="#FFF"/>
+
+                <ImageButton
+                    android:id="@+id/bTleft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:onClick="pad"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="#FFF"/>
+
+                <ImageButton
+                    android:id="@+id/bTright"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:onClick="pad"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:tint="#FFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

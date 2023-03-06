@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pBconn"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="RANKING"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tVranking"/>
+
+        <Button
+            android:text="SUBMIT SCORE"
+            android:layout_height="wrap_content"
+            android:id="@+id/bTsubmit"
+            android:layout_alignParentBottom="true"
+            android:onClick="pad"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/lVranking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:headerDividersEnabled="false"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/tVranking"
+            android:layout_above="@+id/bTsubmit">
+        </ListView>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/bTclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        android:onClick="pad"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:tint="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/bTrefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        android:onClick="pad"
+        android:padding="12dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:tint="#FFF"/>
+
+</RelativeLayout>

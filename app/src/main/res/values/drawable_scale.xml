@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scale">103.9</string>
+
+    <integer-array name="background">
+        <item name="intr_width">1081</item>
+        <item name="intr_height">1768</item>
+        <item name="whr_width">1100</item>
+        <item name="whr_height">1900</item>
+    </integer-array>
+
+    <integer-array name="piece_i">
+        <item name="center_x">23</item>
+        <item name="center_y">175</item>
+        <item name="rest_x">127</item>
+        <item name="rest_y">175</item>
+    </integer-array>
+    <integer-array name="piece_c">
+        <item name="center_x">105</item>
+        <item name="center_y">131</item>
+        <item name="rest_x">145</item>
+        <item name="rest_y">119</item>
+    </integer-array>
+    <integer-array name="piece_l">
+        <item name="center_x">116</item>
+        <item name="center_y">184</item>
+        <item name="rest_x">124</item>
+        <item name="rest_y">116</item>
+    </integer-array>
+    <integer-array name="piece_l_">
+        <item name="center_x">113</item>
+        <item name="center_y">184</item>
+        <item name="rest_x">137</item>
+        <item name="rest_y">116</item>
+    </integer-array>
+    <integer-array name="piece_p">
+        <item name="center_x">125</item>
+        <item name="center_y">191</item>
+        <item name="rest_x">125</item>
+        <item name="rest_y">159</item>
+    </integer-array>
+    <integer-array name="piece_p_">
+        <item name="center_x">118</item>
+        <item name="center_y">171</item>
+        <item name="rest_x">132</item>
+        <item name="rest_y">129</item>
+    </integer-array>
+
+    <array name="piece_array">
+        <item>@array/background</item>
+        <item>@array/piece_i</item>
+        <item>@array/piece_c</item>
+        <item>@array/piece_l</item>
+        <item>@array/piece_l_</item>
+        <item>@array/piece_p</item>
+        <item>@array/piece_p_</item>
+    </array>
+<!--
+    <integer name="piece_c_center_x">105</integer>
+    <integer name="piece_c_center_y">131</integer>
+    <integer name="piece_i_center_x">23</integer>
+    <integer name="piece_i_center_y">175</integer>
+    <integer name="piece_p_center_x">125</integer>
+    <integer name="piece_p_center_y">191</integer>
+    <integer name="piece_l_center_x">116</integer>
+    <integer name="piece_l_center_y">184</integer>
+    <integer name="piece_p__center_x">118</integer>
+    <integer name="piece_p__center_y">171</integer>
+    <integer name="piece_l__center_x">113</integer>
+    <integer name="piece_l__center_y">184</integer>
+
+    <integer name="piece_c_size_x">250</integer>
+    <integer name="piece_c_size_y">250</integer>
+    <integer name="piece_i_size_x">150</integer>
+    <integer name="piece_i_size_y">350</integer>
+    <integer name="piece_p_size_x">250</integer>
+    <integer name="piece_p_size_y">350</integer>
+    <integer name="piece_l_size_x">240</integer>
+    <integer name="piece_l_size_y">300</integer>
+    <integer name="piece_p__size_x">250</integer>
+    <integer name="piece_p__size_y">300</integer>
+    <integer name="piece_l__size_x">250</integer>
+    <integer name="piece_l__size_y">300</integer>-->
+</resources>

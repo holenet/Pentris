@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="PENTRIS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            android:textSize="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="GAME PAUSED"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/bTresume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pad"
+                    android:padding="10dp"
+                    android:text="RESUME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/bTrestart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pad"
+                    android:padding="10dp"
+                    android:text="RESTART"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <ToggleButton
+                    android:id="@+id/tBhint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="HINT"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textOff="HINT OFF"
+                    android:textOn="HINT ON"
+                    android:textSize="20dp"/>
+
+                <ToggleButton
+                    android:id="@+id/tBmusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="HINT"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textOff="MUSIC OFF"
+                    android:textOn="MUSIC ON"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/bThelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pad"
+                    android:padding="10dp"
+                    android:text="HELP"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/bTranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="pad"
+                    android:padding="10dp"
+                    android:text="RANKING"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/bTexitgame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="pad"
+                    android:padding="10dp"
+                    android:text="EXIT GAME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
